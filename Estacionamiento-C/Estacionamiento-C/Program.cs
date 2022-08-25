@@ -1,9 +1,14 @@
+using Estacionamiento_C.Models;
+using Estacionamiento_C.TestsEnClase;
+
 namespace Estacionamiento_C
 {
     public class Program
     {
         public static void Main(string[] args)
         {
+            MainTest.TestHerencia();
+
             var builder = WebApplication.CreateBuilder(args);
 
             // Add services to the container.
@@ -32,5 +37,8 @@ namespace Estacionamiento_C
 
             app.Run();
         }
+
+
+
     }
 }
