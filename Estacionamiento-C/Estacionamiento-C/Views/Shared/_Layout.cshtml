@@ -25,17 +25,23 @@
                         <li class="nav-item">
                             <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a>
                         </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="MostrarNumeros">Mostrar números</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-dark" asp-area="" asp-controller="Personas" asp-action="Index">Personas</a>
+                        </li>
                     </ul>
                 </div>
             </div>
         </nav>
     </header>
     <div class="container">
-        <p>Antes</p>
+     @*   <p>Antes</p>*@
         <main role="main" class="pb-3">
             @RenderBody()
         </main>
-        <p>Despues</p>
+      @*  <p>Despues</p>*@
     </div>
 
     <footer class="border-top footer text-muted">

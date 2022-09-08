@@ -1,5 +1,7 @@
+using Estacionamiento_C.Data;
 using Estacionamiento_C.Models;
 using Estacionamiento_C.TestsEnClase;
+using Microsoft.EntityFrameworkCore;
 
 namespace Estacionamiento_C
 {
@@ -11,6 +13,9 @@ namespace Estacionamiento_C
 
             // Add services to the container.
             builder.Services.AddControllersWithViews();
+            builder.Services.
+                AddDbContext<EstacionamientoContext>(options => options.UseInMemoryDatabase("MiContexto"));
+
 
             var app = builder.Build();
 
