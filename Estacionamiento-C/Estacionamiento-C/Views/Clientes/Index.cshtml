@@ -1,4 +1,4 @@
-﻿@model IEnumerable<Estacionamiento_C.Models.Persona>
+﻿@model IEnumerable<Estacionamiento_C.Models.Cliente>
 
 @{
     ViewData["Title"] = "Index";
@@ -12,6 +12,9 @@
 <table class="table">
     <thead>
         <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.Cuil)
+            </th>
             <th>
                 @Html.DisplayNameFor(model => model.Nombre)
             </th>
@@ -30,6 +33,9 @@
     <tbody>
 @foreach (var item in Model) {
         <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.Cuil)
+            </td>
             <td>
                 @Html.DisplayFor(modelItem => item.Nombre)
             </td>

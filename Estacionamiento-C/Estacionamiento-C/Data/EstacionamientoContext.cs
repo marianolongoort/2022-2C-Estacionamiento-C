@@ -16,6 +16,7 @@ namespace Estacionamiento_C.Data
 
         public DbSet<Empleado> Empleado { get; set; }
 
+        //public DbSet<ClienteVehiculo> ClientesVehiculos { get; set; }
 
     }
 }

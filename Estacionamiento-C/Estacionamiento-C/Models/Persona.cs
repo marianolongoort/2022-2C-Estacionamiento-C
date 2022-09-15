@@ -10,7 +10,7 @@ namespace Estacionamiento_C.Models
 
         [Required(ErrorMessage = ErrorMsg.MsgRequired)]
         [MaxLength(50,ErrorMessage = ErrorMsg.MsgMaxStr)]
-        [MinLength(2,ErrorMessage = ErrorMsg.MsgMinStr)]
+        [MinLength(2,ErrorMessage = ErrorMsg.MsgMinStr)]        
         public string Nombre { get; set; }
 
 

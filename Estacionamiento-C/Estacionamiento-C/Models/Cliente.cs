@@ -2,7 +2,8 @@
 {
     public class Cliente : Persona
     {
-        public int Cuil { get; set; }
+
+        public long Cuil { get; set; }
 
         //prop nav
         public Direccion Direccion { get; set; }// = new Direccion();
